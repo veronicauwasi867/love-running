@@ -91,12 +91,23 @@ main {
 }
 
 /* footer */
-footer {
-    background-color: orange;
+#social-networks {
+    text-align: center;
+    padding: 20px o;
+    display: flex;
+    justify-content:space-evenly;
+    list-style-type: none;
 }
+#social-networks i {
+    font-size: 160%;
+    padding: 5%;
+    color: #3a3a3a;
+}
+
 
 /* Media query : tablets and larger (768px and up) */
 @media screen and (min-width: 768px) {
+
     /* Header */
     nav {
         display: block;
@@ -105,11 +116,12 @@ footer {
         width: fit-content;
         padding-right: 1rem;
     }
+
     #menu {
         display: flex;
     }
-    
-    #menu >li {
+
+    #menu>li {
         padding-left: 1rem;
     }
 
