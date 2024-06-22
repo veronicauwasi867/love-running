@@ -17,12 +17,16 @@ body {
     color: #3a3a3a;
     font-family: 'lato', sans-serif;
 }
-h1, h2, h3 {
+
+h1,
+h2,
+h3 {
     font-family: 'oswald', sans-serif;
     text-transform: uppercase;
     letter-spacing: 2px;
     color: #252525;
 }
+
 .hidden-heading {
     display: none;
 }
@@ -95,6 +99,7 @@ main {
     flex: 1 0 auto;
     margin-top: 47px;
 }
+
 /* Hero Section */
 #hero {
     height: 600px;
@@ -114,7 +119,8 @@ main {
     padding-top: 40px;
     padding-left: 10px;
 }
-#cover-text > h2 #cover-text > h3 {
+
+#cover-text>h2 #cover-text>h3 {
     color: #ffffff;
 }
 
@@ -138,29 +144,32 @@ main {
 #benefits p {
     padding: 0 20px;
 }
+
 #circle-cover-bg {
-    background:url("../images/reasons-image.webp") no-repeat top center/cover;
+    background: url("../images/reasons-image.webp") no-repeat top center/cover;
     height: 90vw;
     width: 90vw;
     margin-bottom: 20px;
     /* Make the square image into a circle */
     border-radius: 50%;
-    max-width:300px ;
+    max-width: 300px;
     max-height: 300px;
 }
+
 #benefits-image {
-    display:flex ;
-    align-items:center;
+    display: flex;
+    align-items: center;
     justify-content: center;
 }
 
 /* Meetup Times Section */
 #times {
-    background:url("../images/dublin-city.webp") no-repeat center/cover;
+    background: url("../images/dublin-city.webp") no-repeat center/cover;
     /* Handles responsivity without the need for a media query */
     display: flex;
     flex-wrap: wrap;
 }
+
 #times div {
     color: #fafafa;
     background-color: rgba(0, 0, 0, .6);
@@ -173,15 +182,18 @@ main {
     /* Creates a grid of meetup times divs over the background image */
     border: 2px solid white;
 }
+
 #times h3 {
     /* Override the heading color set in general styles */
     color: #fafafa;
 }
+
 /* Gallery Page */
-#photos image {
+#photos img {
     width: 100%;
     line-height: 1em;
 }
+
 #photos {
     line-height: 0;
 }
@@ -191,13 +203,22 @@ main {
     text-align: center;
     padding: 20px o;
     display: flex;
-    justify-content:space-evenly;
+    justify-content: space-evenly;
     list-style-type: none;
 }
+
 #social-networks i {
     font-size: 160%;
     padding: 5%;
     color: #3a3a3a;
+}
+
+/* Media query : large or landscape phones (576px and up) */
+@media screen and (min-width: 576px) {
+    #photos {
+        column-count: 2;
+        column-gap: 0;
+    }
 }
 
 
@@ -236,25 +257,33 @@ main {
         /* push main content down to accomodate larger header */
         margin: top 70px;
     }
+
     /* Hero */
     #cover-text {
         width: 300px;
         right: 50px;
     }
+
     /* Reasons Section */
     #benefits-physical,
-     #benefits-mental {
-        display:flex ;
-        flex-direction:column ;
-        width:100% ;
+    #benefits-mental {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
     }
-    #benefits-physical > div, 
-    #benefits-mental > div {
+
+    #benefits-physical>div,
+    #benefits-mental>div {
         width: 75%;
     }
-    #benefits-mental > div {
+
+    #benefits-mental>div {
         text-align: end;
         align-self: flex-end;
+    }
+    /* Gallery */
+    #photos {
+        column-count: 3;
     }
 }
 
@@ -263,28 +292,37 @@ main {
     #menu a :hover {
         border-bottom: 1px solid #3a3a3a;
     }
+     /* Gallery */
+     #photos {
+        column-count: 4;
+    }
 }
 
 @media screen and (min-width: 1200px) {
-/* Reasons section */
-#benefits {
-    display: flex;
-    flex-direction: row;
+
+    /* Reasons section */
+    #benefits {
+        display: flex;
+        flex-direction: row;
+    }
+
+    #benefits>div {
+        flex: 1;
+    }
+
+    #benefits-image {
+        order: 0;
+    }
+
+    #benefits-mental {
+        order: 1;
+    }
+
+    #benefits-mental>div {
+        align-self: flex-start;
+    }
+
+    #benefits-physical>div {
+        align-self: flex-end;
+    }
 }
-#benefits > div {
-    flex: 1;
-}
-#benefits-image {
-order: 0;
-}
-#benefits-mental {
-    order: 1;
-}
-#benefits-mental > div {
-    align-self: flex-start;
-}
-#benefits-physical > div {
-    align-self: flex-end;
-}
-}
-    
