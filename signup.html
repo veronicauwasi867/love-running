@@ -1,8 +1,8 @@
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--Meta tags for search engines-->
     <meta name="description"
@@ -15,9 +15,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
     <!--Stylesheet-->
-    <link rel="Stylesheet" href="assets/css/style.css"
-    
-</head>
+    <link rel="Stylesheet" href="assets/css/style.css" </head>
 
 <body>
     <!--Header-->
@@ -26,7 +24,7 @@
             <h1 id="logo">Love Running</h1>
         </a>
         <input type="checkbox" id="nav-toggle" name="nav-toggle">
-        <label for="nav-toggle" class="nav-toggle-label"> 
+        <label for="nav-toggle" class="nav-toggle-label">
             <i class="fa-solid fa-bars"></i>
         </label>
         <nav>
@@ -39,30 +37,63 @@
     </header>
 
     <!--Main Content-->
-    <main>Main Content</main>
+    <main>
+        <section id="signup">
+            <form id="signup-form" method="POST" action="https://formdump.codeinstitute.net">
+                <h2>
+                    <i class="fa-solid fa-heartbeat"></i> Let's get you signed up!
+                </h2>
+                <label for="first-name">First Name</label>
+                <input type="text" name="first_name" id="first-name" class="text-input" required>
+                <br>
+                <label for="last-name">Last Name</label>
+                <input type="text" name="last_name" id="last-name" class="text-input" required>
+                <br>
+                <label for="email-address">Email Address</label>
+                <input type="email" name="email_address" id="email-address" class="text-input" required>
+                <br>
+
+                <div class="radio-buttons">
+                    <div>
+                        <label for="road">Road</label>
+                        <input type="radio" name="running_preference" id="road" value="road" required checked>
+                    </div>
+                    <div>
+                        <label for="trail">Trail</label>
+                        <input type="radio" name="running_preference" id="trail" value="trail" required checked>
+                    </div>
+                    <div>
+                        <label for="both">Both</label>
+                        <input type="radio" name="running_preference" id="both" value="both" required checked>
+                    </div>
+                </div>
+                <button type="submit" class="join-button">Let's Run!</button>
+            </form>
+        </section>
+    </main>
 
     <!--Footer-->
     <footer>
         <ul id="social-networks">
             <li><a href="https://www.facebook.com/" target="_blank" rel="noopener"
-         aria-label="visit our Facebook page (opens in a new tab)">
-         <i class="fa-brands fa-facebook"></i></a></li>
+                    aria-label="visit our Facebook page (opens in a new tab)">
+                    <i class="fa-brands fa-facebook"></i></a></li>
 
-            <li><a href="https://www.twitter.com/" target="_blank" rel="noopener" 
-            aria-label="visit our Twitter page (opens in a new tab)">
-            <i class="fa-brands fa-twitter"></i></a></li>
+            <li><a href="https://www.twitter.com/" target="_blank" rel="noopener"
+                    aria-label="visit our Twitter page (opens in a new tab)">
+                    <i class="fa-brands fa-twitter"></i></a></li>
 
             <li><a href="https://www.youtube.com/" target="_blank" rel="noopener"
-             aria-label="visit our Youtube page (opens in a new tab)">
-             <i class="fa-brands fa-youtube"></i></a></li>
+                    aria-label="visit our Youtube page (opens in a new tab)">
+                    <i class="fa-brands fa-youtube"></i></a></li>
 
             <li><a href="https://www.instagram.com/" target="_blank" rel="noopener"
-             aria-label="visit our Instagram page (opens in a new tab)">
-             <i class="fa-brands fa-instagram"></i></a></li>
+                    aria-label="visit our Instagram page (opens in a new tab)">
+                    <i class="fa-brands fa-instagram"></i></a></li>
         </ul>
     </footer>
 
-<!--Font Awesome Kit-->
+    <!--Font Awesome Kit-->
     <script src="https://kit.fontawesome.com/7eca77c293.js" crossorigin="anonymous"></script>
 </body>
 
